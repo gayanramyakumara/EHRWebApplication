@@ -1,0 +1,75 @@
+﻿@model EhrWeb.Models.PatientModel
+
+@{
+    ViewBag.Title = "PatientDisplay";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>PatientDisplay</h2>
+
+<div>
+    <h4>PatientModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PIN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PIN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PatientName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PatientName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Birthday)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Birthday)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NIC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NIC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JoinedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JoinedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdatedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UpdatedDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Index","Patient", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
